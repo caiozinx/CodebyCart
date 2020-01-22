@@ -1,6 +1,6 @@
 ## Test CodeBy
 
-Front-end React.
+Back-end node.js
 
 ## Available Scripts
 

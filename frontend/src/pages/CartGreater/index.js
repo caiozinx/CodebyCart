@@ -31,11 +31,9 @@ export default class CartGreater extends Component {
 
   maskMoney(value) {
     const price = value.toString();
-    return (
-      price.slice(0, price.toString().length - 2) +
-      ',' +
-      price.toString().slice(price.toString().length - 2)
-    );
+    return price.slice(0, price.length - 2) === ''
+      ? '0' + ',' + price.slice(price.length - 2)
+      : price.slice(0, price.length - 2) + ',' + price.slice(price.length - 2);
   }
 
   render() {
